@@ -109,8 +109,43 @@ source, not from Lenovo.
 
 ## Deploy
 
-Vercel project `sii-corporate`, team `sinergiintegrasiindonesia-6896`.
+The site is a git repo. Connect it to the existing Vercel project that already
+owns the domain, and every push deploys to sinergiindonesia.com.
 
-**Deploys via the Vercel MCP integration only succeed when they create a new
-project** — pushing to an existing one returns 403. Connect this folder to a Git
-repository and link that repo in Vercel to get normal deploy-on-push.
+### One-time setup
+
+1. Create an empty repo at <https://github.com/new> (no README, no .gitignore).
+2. Push:
+
+   ```bash
+   cd ~/Documents/SinergiIndonesia
+   git remote add origin https://github.com/<you>/<repo>.git
+   git push -u origin main
+   ```
+
+3. Vercel -> project **`sii-corporate`** -> Settings -> Git -> Connect that repo.
+   Keep the production branch as `main`.
+
+That project already serves `www.sinergiindonesia.com`, so no domain change is
+needed and nothing has to be re-pointed.
+
+### After that
+
+```bash
+git add -A && git commit -m "..." && git push
+```
+
+Vercel builds and publishes automatically.
+
+### Why not deploy from here
+
+The Vercel MCP integration can only deploy when the call *creates* a new
+project; pushing to an existing one returns 403, and its read APIs return 404.
+That is why several throwaway projects exist. Once Git is connected they can all
+be deleted except `sii-corporate`.
+
+### Leftover Vercel projects to delete
+
+`sinergiindonesia`, `sinergiindonesia-site`, `sinergiindonesia-web`,
+`sii-website`, `sinergi-integrasi-indonesia`, `sinergi-permission-probe`.
+Keep only `sii-corporate`.
