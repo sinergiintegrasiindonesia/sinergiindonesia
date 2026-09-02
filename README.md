@@ -23,6 +23,8 @@ that is expected.
 | `assets/img/logo-mark.svg` | Logo mark **(interim vector recreation — replace)** |
 | `assets/img/swoosh.svg` | Brand swoosh under the hero |
 | `api/contact.js` | Serverless function: validates and emails the enquiry |
+| `assets/img/jumpserver.svg` | JumpServer wordmark (from jumpserver.com) |
+| `assets/img/lenovo.svg` | Lenovo wordmark |
 
 ## Content source
 
@@ -89,6 +91,21 @@ Two phone numbers are shown, labelled Office and Mobile:
 Superseded, kept here only so nobody reintroduces them:
 `contact@sinergiintegration.com` (old live site) and
 `info@sinergiindonesia.com` (profile PDF).
+
+## Products section
+
+`#products` presents **JumpServer**, the open-source Privileged Access
+Management platform, with **Lenovo** named as the hardware partner. A scrolling
+logo banner sits under the hero.
+
+Product detail is summarised from jumpserver.com. Vendor statistics
+(3,000+ enterprise customers, 500k+ deployments, 30k+ GitHub stars) are
+attributed to JumpServer on the page, not claimed as ours.
+
+**Before launch, confirm you are authorised to display both marks.** Lenovo in
+particular has strict partner branding rules and normally supplies approved
+logo assets through its partner portal; the file here came from a public
+source, not from Lenovo.
 
 ## Deploy
 
