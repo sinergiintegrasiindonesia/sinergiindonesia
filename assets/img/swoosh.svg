@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 34" aria-hidden="true">
+  <defs>
+    <linearGradient id="sii-swoosh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#2196c9"/>
+      <stop offset="45%"  stop-color="#3cb878"/>
+      <stop offset="100%" stop-color="#d9e021"/>
+    </linearGradient>
+  </defs>
+  <path d="M2 4 C70 34 230 34 298 2 C232 26 68 26 2 4 Z" fill="url(#sii-swoosh)"/>
+</svg>
