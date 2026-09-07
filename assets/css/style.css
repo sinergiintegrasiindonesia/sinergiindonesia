@@ -97,7 +97,7 @@ p { margin: 0 0 1em; }
 }
 .site-header__inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 76px; }
 
-.brand { display: inline-flex; align-items: center; gap: .55rem; color: var(--ink); font-weight: 800; font-size: 1.1rem; letter-spacing: -.03em; }
+.brand { display: inline-flex; align-items: center; gap: .7rem; color: #2d3b42; font-weight: 800; font-size: 1.1rem; letter-spacing: -.03em; }
 .brand:hover { text-decoration: none; }
 .brand svg { width: 26px; height: 26px; flex: none; }
 .brand small { display: block; font-size: .58rem; font-weight: 600; letter-spacing: .16em; color: var(--ink-soft); text-transform: uppercase; margin-top: -2px; }
@@ -266,8 +266,8 @@ p { margin: 0 0 1em; }
    ============================================================ */
 
 /* ---------- Brand lockup ---------- */
-.brand__logo { height: 38px; width: auto; flex: none; }
-.site-footer .brand__logo { height: 42px; }
+.brand__logo { height: 42px; width: auto; flex: none; }
+.site-footer .brand__logo { height: 48px; }
 
 /* ---------- Fact strip (HQ / Focus / Reach) ---------- */
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.2rem; margin-top: 2rem; }
