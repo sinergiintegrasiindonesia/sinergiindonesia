@@ -1,3 +1,6 @@
 node_modules/
 .vercel
 .DS_Store
+
+# Brand master artwork — kept locally, not deployed
+Logo/
