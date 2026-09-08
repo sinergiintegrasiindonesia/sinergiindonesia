@@ -4,3 +4,6 @@ node_modules/
 
 # Brand master artwork — kept locally, not deployed
 Logo/
+
+# Generated build output — not deployed
+build/
