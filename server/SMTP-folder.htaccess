@@ -1,0 +1,18 @@
+# Put this file inside the SMTP/ folder, renamed to .htaccess
+# Blocks both directory listing and any direct request for the credentials.
+
+Options -Indexes
+
+<IfModule mod_authz_core.c>
+    # Apache 2.4
+    <FilesMatch "\.php$">
+        Require all denied
+    </FilesMatch>
+</IfModule>
+<IfModule !mod_authz_core.c>
+    # Apache 2.2
+    <FilesMatch "\.php$">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+</IfModule>

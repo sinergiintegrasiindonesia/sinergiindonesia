@@ -7,3 +7,6 @@ Logo/
 
 # Generated build output — not deployed
 build/
+
+# Real SMTP credentials — the sample template is tracked, the real one never is
+smtp-config.php

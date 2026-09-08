@@ -1,0 +1,5 @@
+# Server-side files for Rumahweb/cPanel — versioned here, but never deployed
+# to Vercel, which would serve them as static text instead of executing them.
+server/
+build/
+Logo/
