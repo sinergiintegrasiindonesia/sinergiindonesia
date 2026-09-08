@@ -46,6 +46,11 @@
   var label = form.querySelector('.form__submit-label');
   var FALLBACK = 'contact@sinergiindonesia.com';
 
+  // The form handler runs on our own cPanel hosting, which already has a
+  // working mail transport. The site itself is served from Vercel, so this
+  // is a cross-origin POST; contact.php allows only our two origins.
+  var ENDPOINT = 'https://sinergiindonesia.com/contact.php';
+
   function show(kind, text) {
     status.textContent = text;
     status.className = 'form__status is-shown form__status--' + kind;
@@ -73,7 +78,7 @@
     sending(true);
     status.className = 'form__status';
 
-    fetch('/api/contact', {
+    fetch(ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
