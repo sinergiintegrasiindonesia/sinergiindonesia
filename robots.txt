@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Build output and server-side files are not deployed, but be explicit
+Disallow: /server/
+Disallow: /api/
+
+Sitemap: https://www.sinergiindonesia.com/sitemap.xml
